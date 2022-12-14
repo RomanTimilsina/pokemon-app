@@ -1,9 +1,16 @@
 import React from 'react'
 
-export default function Pagination() {
+export default function Pagination({next, prev}) {
+
   return (
-    <div>
-      
-    </div>
+    <>
+    
+      {next && <button onClick={next} >Next</button>}
+    
+    {
+      prev && <button onClick={prev} >Previous</button>
+    }
+     
+    </>
   )
 }
